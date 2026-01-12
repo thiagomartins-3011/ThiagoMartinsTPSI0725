@@ -1,0 +1,30 @@
+body{
+    background-color: darkred;
+}
+
+.h1{
+    color: lightcoral;
+    text-align: center;
+    padding: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    display: inline-block;
+}
+
+.description{
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: lightcoral;
+    margin: 5px;
+}
+
+th, td, li, .lorem{
+    color: lightcoral;
+    font-family: Arial, sans-serif;
+    padding: 5px;
+}
+
+.tabela, .lista, .texto{
+    background-color: brown;
+    display: inline-block;
+}
