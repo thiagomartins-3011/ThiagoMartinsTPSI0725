@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SoundStore — Instrumentos Musicais</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="../pages/index.html" class="logo">SOUND<span>STORE</span></a>
+
+      <!-- links desktop -->
+      <ul class="nav-links">
+        <li><a href="../pages/index.html">Início</a></li>
+        <li><a href="../pages/produtos.html">Produtos</a></li>
+        <li><a href="../pages/contato.html">Contato</a></li>
+      </ul>
+
+      <!-- hamburger button -->
+      <button class="hamburger" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- menu mobile -->
+    <nav class="nav-mobile">
+      <a href="../pages/index.html">Início</a>
+      <a href="../pages/produtos.html">Produtos</a>
+      <a href="../pages/contato.html">Contato</a>
+    </nav>
+  </nav>
+
+
+  <!-- hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>
+        A SUA MÚSICA
+        <span>COMEÇA AQUI</span>
+      </h1>
+      <p>
+        Guitarras, baterias, teclados e muito mais.
+        Encontra o instrumento perfeito para o seu talento.
+      </p>
+      <div class="hero-botoes">
+        <a href="../pages/produtos.html" class="btn btn-primary">Ver Produtos</a>
+        <a href="../pages/contato.html" class="btn btn-outline">Contato</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- galeria lightbox -->
+  <section class="galeria">
+    <div class="container">
+      <h2 class="titulo-secao"><span>GALERIA</span></h2>
+      <p class="subtitulo">Clique em qualquer imagem para ver em destaque</p>
+
+      <div class="galeria-grid">
+
+        <!-- data-imagem, data-titulo e data-descricao -->
+
+        <div class="galeria-item"
+             data-imagem="../images/stratocaster.webp"
+             data-titulo="Fender Stratocaster"
+             data-descricao="Uma das guitarras mais icónicas do mundo, usada por artistas de blues e rock.">
+          <div class="galeria-img">
+            <img src="../images/stratocaster.webp" alt="Guitarra Fender Stratocaster" />
+            <div class="galeria-overlay">🔍</div>
+          </div>
+          <div class="galeria-info">
+            <h4>Fender Stratocaster</h4>
+            <p>Guitarra Elétrica</p>
+          </div>
+        </div>
+
+        <div class="galeria-item"
+             data-imagem="../images/roland.jpeg"
+             data-titulo="Roland FP-30X"
+             data-descricao="Piano digital portátil com 88 teclas pesadas e som de piano de cauda excepcional.">
+          <div class="galeria-img">
+            <img src="../images/roland.jpeg" alt="Piano Digital Roland FP-30X" />
+            <div class="galeria-overlay">🔍</div>
+          </div>
+          <div class="galeria-info">
+            <h4>Roland FP-30X</h4>
+            <p>Piano Digital</p>
+          </div>
+        </div>
+
+        <div class="galeria-item"
+             data-imagem="../images/pearl.webp"
+             data-titulo="Pearl Export EXX"
+             data-descricao="Kit de bateria acústica completo, ideal para iniciantes e músicos intermédios.">
+          <div class="galeria-img">
+            <img src="../images/pearl.webp" alt="Kit de Bateria Pearl Export EXX" />
+            <div class="galeria-overlay">🔍</div>
+          </div>
+          <div class="galeria-info">
+            <h4>Pearl Export EXX</h4>
+            <p>Bateria Acústica</p>
+          </div>
+        </div>
+
+        <div class="galeria-item"
+             data-imagem="../images/violino.png"
+             data-titulo="Violino 4/4"
+             data-descricao="Violino artesanal em madeira maciça, com arco e estojo incluídos.">
+          <div class="galeria-img">
+            <img src="../images/violino.png" alt="Violino 4/4 Student" />
+            <div class="galeria-overlay">🔍</div>
+          </div>
+          <div class="galeria-info">
+            <h4>Violino 4/4</h4>
+            <p>Violino</p>
+          </div>
+        </div>
+
+        <div class="galeria-item"
+             data-imagem="../images/yamaha.jpeg"
+             data-titulo="Yamaha YTR-2330"
+             data-descricao="Trompete em Sib de alta qualidade, ideal para estudantes e músicos intermédios.">
+          <div class="galeria-img">
+            <img src="../images/yamaha.jpeg" alt="Yamaha YTR-2330" />
+            <div class="galeria-overlay">🔍</div>
+          </div>
+          <div class="galeria-info">
+            <h4>Yamaha YTR-2330</h4>
+            <p>Trompete</p>
+          </div>
+        </div>
+
+        <div class="galeria-item"
+             data-imagem="../images/ibanez.webp"
+             data-titulo="Ibanez GSR200"
+             data-descricao="Baixo elétrico leve e confortável, perfeito para quem está a iniciar-se.">
+          <div class="galeria-img">
+            <img src="../images/ibanez.webp" alt="Ibanez GSR200" />
+            <div class="galeria-overlay">🔍</div>
+          </div>
+          <div class="galeria-info">
+            <h4>Baixo Ibanez GSR200</h4>
+            <p>Baixo Elétrico</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-fechar" id="lbFechar">✕</button>
+    <div class="lightbox-conteudo">
+      <div class="lightbox-emoji" id="lbImagem"></div>
+      <h3 id="lbTitulo"></h3>
+      <p id="lbDescricao"></p>
+    </div>
+  </div>
+
+
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <a href="../pages/index.html" class="logo">SOUND<span>STORE</span></a>
+        <div class="footer-links">
+          <a href="../pages/index.html">Início</a>
+          <a href="../pages/produtos.html">Produtos</a>
+          <a href="../pages/contato.html">Contato</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 SoundStore — Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato — SoundStore</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="../pages/index.html" class="logo">SOUND<span>STORE</span></a>
+      <ul class="nav-links">
+        <li><a href="../pages/index.html">Início</a></li>
+        <li><a href="../pages/produtos.html">Produtos</a></li>
+        <li><a href="../pages/contato.html">Contato</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="nav-mobile">
+      <a href="../pages/index.html">Início</a>
+      <a href="../pages/produtos.html">Produtos</a>
+      <a href="../pages/contato.html">Contato</a>
+    </nav>
+  </nav>
+
+
+  <!-- header -->
+  <section class="cabecalho-pagina">
+    <div class="container">
+      <h1 class="titulo-secao"><span>FALE</span> COM A <span>GENTE</span></h1>
+      <p>Estamos aqui para te ajudar a encontrar o instrumento perfeito</p>
+    </div>
+  </section>
+
+
+  <!-- contato -->
+  <section class="secao-contato">
+    <div class="container">
+      <div class="contato-grid">
+
+        <!-- info contato -->
+        <div class="info-contato">
+          <div class="titulo-secao" style="font-size:1.8rem;">INFORMAÇÕES</div>
+          <p>Tem dúvidas sobre algum instrumento? A nossa equipe está disponível para te ajudar de segunda a sábado.</p>
+
+          <div class="item-contato">
+            <div class="item-icon">📍</div>
+            <div class="item-texto">
+              <strong>Morada</strong>
+              <span>Rua da Música, 42 — Lisboa</span>
+            </div>
+          </div>
+
+          <div class="item-contato">
+            <div class="item-icon">📞</div>
+            <div class="item-texto">
+              <strong>Telefone</strong>
+              <span>+351 210 000 000</span>
+            </div>
+          </div>
+
+          <div class="item-contato">
+            <div class="item-icon">✉️</div>
+            <div class="item-texto">
+              <strong>Email</strong>
+              <span>info@soundstore.pt</span>
+            </div>
+          </div>
+
+          <div class="item-contato">
+            <div class="item-icon">🕐</div>
+            <div class="item-texto">
+              <strong>Horário</strong>
+              <span>Segunda a Sábado: 10h – 19h</span>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- formulário contato -->
+        <div class="caixa-form">
+          <h3>ENVIAR MENSAGEM</h3>
+
+          <!-- validação -->
+          <form id="formulario" novalidate>
+
+            <!-- nome e email -->
+            <div class="linha-form">
+              <div class="grupo-form">
+                <label for="nome">Nome *</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" />
+                <div class="msg-erro" id="erroNome"></div>
+              </div>
+              <div class="grupo-form">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="exemplo@email.com" />
+                <div class="msg-erro" id="erroEmail"></div>
+              </div>
+            </div>
+
+            <!-- assunto -->
+            <div class="grupo-form">
+              <label for="assunto">Assunto *</label>
+              <select id="assunto" name="assunto">
+                <option value="">Seleciona um assunto...</option>
+                <option value="info">Informação sobre produtos</option>
+                <option value="encomenda">Encomenda / Compra</option>
+                <option value="assistencia">Assistência técnica</option>
+                <option value="outro">Outro</option>
+              </select>
+              <div class="msg-erro" id="erroAssunto"></div>
+            </div>
+
+            <!-- mensagem -->
+            <div class="grupo-form">
+              <label for="mensagem">Mensagem *</label>
+              <textarea id="mensagem" name="mensagem" placeholder="Escreve sua mensagem..."></textarea>
+              <div class="msg-erro" id="erroMensagem"></div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%; text-align:center;">
+              Enviar Mensagem →
+            </button>
+
+          </form>
+
+          <!-- sucesso -->
+          <div class="sucesso-form" id="sucessoForm">
+            <div class="icone">✅</div>
+            <h4>MENSAGEM ENVIADA!</h4>
+            <p>Obrigado pelo contato. Responderemos em breve.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <a href="../pages/index.html" class="logo">SOUND<span>STORE</span></a>
+        <div class="footer-links">
+          <a href="../pages/index.html">Início</a>
+          <a href="../pages/produtos.html">Produtos</a>
+          <a href="../pages/contato.html">Contato</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 SoundStore — Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
